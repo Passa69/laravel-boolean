@@ -11,7 +11,10 @@
                 <td>{{postcard.sender}}</td>
                 <td>{{postcard.text}}</td>
                 <td>{{postcard.address}}</td>
-                <td></td>
+                <td>
+                    <img v-if="postcard.img" :src="'/storage/postcards/' + postcard.img" width="100px">
+                    <p v-else>no image</p>
+                </td>
             </tr>
 
         </table>
