@@ -10,4 +10,19 @@ class GuestController extends Controller
 
         return view('pages.home');
     }
+
+    public function createPostcard() {
+
+        return view('pages.create');
+    }
+    public function storePostcard(Request $request) {
+
+        // $data = $request -> validate([
+
+        // ]);
+
+        $data = $request -> all();
+
+        dd($data);
+    }
 }
