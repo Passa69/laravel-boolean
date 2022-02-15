@@ -30,7 +30,7 @@ class GuestController extends Controller
         $imageFile = $data['img']; //$request -> file('image');
         $imageName = rand(100000, 999999). '_' .time() . '.' . $imageFile -> getClientOriginalExtension();
 
-        $imageFile -> storeAs('/postcards/', $imageFile -> getClientOriginalName(), 'public');
+        $imageFile -> storeAs('/postcards/', $imageName, 'public');
 
         // $data = $request -> all();
 
