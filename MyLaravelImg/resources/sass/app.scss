@@ -6,3 +6,17 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+body {
+    background-color: purple;
+    color: white;
+    text-align: center;
+
+    a {
+        margin: 10px;
+    }
+
+    th, td {
+        padding: 5px 15px;
+    }
+}

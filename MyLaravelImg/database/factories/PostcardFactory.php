@@ -8,7 +8,7 @@ use Faker\Generator as Faker;
 $factory->define(Postcard::class, function (Faker $faker) {
     return [
         'sender' => $faker -> words(1, true),
-        'text' => $faker -> text(),
+        'text' => $faker -> text(100),
         'address' => $faker -> words(3, true),
         'img' => null,
     ];

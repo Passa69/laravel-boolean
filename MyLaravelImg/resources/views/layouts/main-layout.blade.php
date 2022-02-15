@@ -16,7 +16,7 @@
 
         @yield('content')
 
-        @include('components.header')
+        @include('components.footer')
     </div>
 </body>
 </html>
